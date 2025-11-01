@@ -1,0 +1,23 @@
+img{
+    width: 250px;
+    border-radius: 50px;
+}
+
+
+nav{
+    
+   
+    background-color: red;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly
+}
+
+li{
+    list-style: none;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+}
