@@ -1,0 +1,25 @@
+.libros {
+    display: flex;
+    background-color: white;
+    border: solid red;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin: 30px;
+    padding: 30px;
+}
+
+.libros img{
+    width: 200px;
+    object-fit: contain;
+}
+
+.libros button{
+    background-color: red;
+    color: black;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+
+}
