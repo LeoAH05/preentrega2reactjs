@@ -1,0 +1,19 @@
+.agregar{
+    background-color: red;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    
+}
+
+.controles button {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    margin: 15px;
+
+
+}

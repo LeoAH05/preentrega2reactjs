@@ -1,25 +1,30 @@
 import React, {useEffect, useState} from 'react'
-import {getUnaNovela} from "../../asyncmock"
+import { getProductoById } from "../../asyncmock"
 import ItemDetail from "../ItemDetail/ItemDetail"
 import { useParams } from 'react-router-dom'
 
 
 const ItemDetailContainer = () => {
-    const [novelas, setNovelas] = useState (null)
-    const params= useParams ()
+    const [novela, setNovela] = useState (null)
+    const {id}= useParams ()
 
     useEffect(()=>{
-        getUnaNovela(params.id)
-        .then(respuesta => setNovelas(respuesta))
+         getProductoById(id)
+        .then(respuesta => setNovela(respuesta))
 
-    }, [])
+    }, [id])
 
 
+    if (novela === null) {
+  return <p>Cargando...</p>
+}
+
+  
 
 
   return (
     <div>
-        <ItemDetail {...novelas}/>
+        <ItemDetail {...novela}/>
 
 
     </div>

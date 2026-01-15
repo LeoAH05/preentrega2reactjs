@@ -1,0 +1,23 @@
+.finalizar{
+    background-color: red;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+
+
+.carrito img{
+    
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 10px;
+    
+}
+
+.producto{
+    display: flex;
+}
+

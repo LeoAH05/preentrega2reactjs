@@ -1,11 +1,17 @@
-import React from 'react'
-import Item from "../Item/Item" 
+import Item from "../Item/Item"
 import "./ItemList.css"
 
-const ItemList = ({novelas}) => {
+const ItemList = ({ productos }) => {
+
+  if (!productos || productos.length === 0) {
+    return <p>No hay productos para mostrar</p>
+  }
+
   return (
-    <div className= "productos">
-        {novelas.map(item=> <Item key={item.id} {...item}/>)}
+    <div className="productos">
+      {productos.map(item => (
+        <Item key={item.id} {...item} />
+      ))}
     </div>
   )
 }
